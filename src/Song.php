@@ -1,4 +1,7 @@
 <?php
+
+namespace Jacob\WebtCoreServerResponsesWithPhpInJsonFormat;
+
 class Song {
     private int $id;
     private string $name;

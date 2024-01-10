@@ -1,6 +1,9 @@
 <?php
-require_once("VideogameOST.php");
-require_once("Song.php");
+
+namespace Jacob\WebtCoreServerResponsesWithPhpInJsonFormat;
+
+use Jacob\WebtCoreServerResponsesWithPhpInJsonFormat\VideogameOST;
+use Jacob\WebtCoreServerResponsesWithPhpInJsonFormat\Song;
 
 class Seeder {
     public function seeder() : array {

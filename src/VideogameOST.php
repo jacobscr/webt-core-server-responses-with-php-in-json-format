@@ -1,4 +1,7 @@
 <?php
+
+namespace Jacob\WebtCoreServerResponsesWithPhpInJsonFormat;
+
 class VideogameOST {
     private int $id;
     private string $name;

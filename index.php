@@ -1,6 +1,4 @@
 <?php
-require_once('src/VideogameOST.php');
-require_once('src/Song.php');
-
+require_once 'vendor/autoload.php';
 
 ?>
