@@ -5,8 +5,10 @@ namespace Jacob\WebtCoreServerResponsesWithPhpInJsonFormat;
 use Jacob\WebtCoreServerResponsesWithPhpInJsonFormat\VideogameOST;
 use Jacob\WebtCoreServerResponsesWithPhpInJsonFormat\Song;
 
-class Seeder {
-    public function seeder() : array {
+class Seeder
+{
+    public function seeder(): array
+    {
         $ost1 = new VideogameOST(1, "The Legend of Zelda: Ocarina of Time", "The Legend of Zelda: Ocarina of Time", 1998, [
             new Song(1, "Title Theme", "Koji Kondo", 1, "2:48"),
             new Song(2, "Enter Ganondorf", "Koji Kondo", 2, "0:08"),

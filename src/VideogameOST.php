@@ -16,5 +16,8 @@ class VideogameOST {
         $this->releaseYear = $releaseYear;
         $this->trackList = $trackList;
     }
+    public function getName(): string {
+        return $this->name;
+    }
 }
 ?>
