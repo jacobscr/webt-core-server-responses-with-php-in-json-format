@@ -2,7 +2,7 @@
 
 namespace Jacob\WebtCoreServerResponsesWithPhpInJsonFormat;
 
-class Song implements \JsonSerializable {
+class Song {
     private int $id;
     private string $name;
     private string $artist;
@@ -15,27 +15,6 @@ class Song implements \JsonSerializable {
         $this->artist = $artist;
         $this->trackNumber = $trackNumber;
         $this->duration = $duration;
-    }
-    function getTitle () {
-        return $this->name;
-    }
-    function getArtist () {
-        return $this->artist;
-    }
-    function getTrackNumber () {
-        return $this->trackNumber;
-    }
-    function getDuration () {
-        return $this->duration;
-    }
-    public function jsonSerialize() {
-        return [
-            'id' => $this->id,
-            'name' => $this->name,
-            'artist' => $this->artist,
-            'trackNumber' => $this->trackNumber,
-            'duration' => $this->duration,
-        ];
     }
 }
 ?>
