@@ -2,7 +2,7 @@
 
 namespace Jacob\WebtCoreServerResponsesWithPhpInJsonFormat;
 
-class VideogameOST {
+class VideogameOST implements \JsonSerializable {
     private int $id;
     private string $name;
     private string $videoGameName;
@@ -16,8 +16,23 @@ class VideogameOST {
         $this->releaseYear = $releaseYear;
         $this->trackList = $trackList;
     }
-    public function getName(): string {
+    function getId () {
+        return $this->id;
+    }
+    function getTitle () {
         return $this->name;
+    }
+    function getSongs () {
+        return $this->trackList;
+    }
+    public function jsonSerialize() {
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'videoGameName' => $this->videoGameName,
+            'releaseYear' => $this->releaseYear,
+            'trackList' => $this->trackList,
+        ];
     }
 }
 ?>
