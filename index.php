@@ -11,7 +11,10 @@ $osts = $seeder->seeder();
 // Get the requested OST ID from the URL
 $requestedOstId = $_GET['id'] ?? null;
 
-if ($requestedOstId !== null) {
+if ($requestedOstId === 'all') {
+    // Output all OSTs as JSON
+    echo json_encode($osts);	
+} elseif ($requestedOstId !== null) {
     // Find the requested OST based on its ID
     $requestedOst = null;
     foreach ($osts as $ost) {
@@ -20,7 +23,6 @@ if ($requestedOstId !== null) {
             break;
         }
     }
-
     if ($requestedOst !== null) {
         // Output the requested OST as JSON
         echo json_encode($requestedOst);
