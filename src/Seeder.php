@@ -9,7 +9,8 @@ class Seeder
 {
     public function seeder(): array
     {
-        $ost1 = new VideogameOST(1, "The Legend of Zelda: Ocarina of Time", "The Legend of Zelda: Ocarina of Time", 1998, [
+        return [
+        new VideogameOST(1, "The Legend of Zelda: Ocarina of Time", "The Legend of Zelda: Ocarina of Time", 1998, [
             new Song(1, "Title Theme", "Koji Kondo", 1, "2:48"),
             new Song(2, "Enter Ganondorf", "Koji Kondo", 2, "0:08"),
             new Song(3, "Deku Tree", "Koji Kondo", 3, "2:12"),
@@ -24,8 +25,8 @@ class Seeder
             new Song(12, "Zelda's Theme", "Koji Kondo", 12, "0:07"),
             new Song(13, "Lon Lon Ranch", "Koji Kondo", 13, "2:12"),
             new Song(14, "Kakariko Village", "Koji Kondo", 14, "2:12")
-        ]);
-        $ost2 = new VideogameOST(2, "The Legend of Zelda: Majora's Mask", "The Legend of Zelda: Majora's Mask", 2000, [
+        ]),
+        new VideogameOST(2, "The Legend of Zelda: Majora's Mask", "The Legend of Zelda: Majora's Mask", 2000, [
             new Song(1, "Title Theme", "Koji Kondo", 1, "2:48"),
             new Song(2, "Enter Ganondorf", "Koji Kondo", 2, "0:08"),
             new Song(3, "Deku Tree", "Koji Kondo", 3, "2:12"),
@@ -40,8 +41,8 @@ class Seeder
             new Song(12, "Zelda's Theme", "Koji Kondo", 12, "0:07"),
             new Song(13, "Lon Lon Ranch", "Koji Kondo", 13, "2:12"),
             new Song(14, "Kakariko Village", "Koji Kondo", 14, "2:12")
-        ]);
-        $ost3 = new VideogameOST(3, "The Legend of Zelda: The Wind Waker", "The Legend of Zelda: The Wind Waker", 2002, [
+        ]),
+        new VideogameOST(3, "The Legend of Zelda: The Wind Waker", "The Legend of Zelda: The Wind Waker", 2002, [
             new Song(1, "Title Theme", "Koji Kondo", 1, "2:48"),
             new Song(2, "Enter Ganondorf", "Koji Kondo", 2, "0:08"),
             new Song(3, "Deku Tree", "Koji Kondo", 3, "2:12"),
@@ -56,9 +57,7 @@ class Seeder
             new Song(12, "Zelda's Theme", "Koji Kondo", 12, "0:07"),
             new Song(13, "Lon Lon Ranch", "Koji Kondo", 13, "2:12"),
             new Song(14, "Kakariko Village", "Koji Kondo", 14, "2:12")
-        ]);
-        $ret = [$ost1, $ost2, $ost3];
-        return $ret;
+        ])];
     }
 }
 ?>
